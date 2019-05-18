@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Presupuesto</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="./javascript.js"></script>
+	
+
+
+</head>
+
+<body onload="comenzar()">
+	<div class="marco" id="contenedor">
+
+		<div class="caja" id="cabecera">
+			<button class="boton" id="nuevo">Nuevo</button>
+			<button class="boton" id="guardar">Guardar</button>
+			<button class="boton" id="factura">Factura</button>
+			<div class="etiqueta" id="client">Cliente:</div>
+			<div contenteditable="true" class="entrada" id="cliente">N Cliente </div>
+			<div class="etiqueta" id="clientdesc">Cliente Para Operaciones Contado</div>
+		</div>
+
+		<div contenteditable="true" class="caja" id="consulta">
+
+		</div>
+
+		<div class="caja" id="presupuesto">
+
+			<p class="etiqueta" id="etipo">Tipo</p>
+			<p class="etiqueta" id="eparte">Parte</p>
+			<p class="etiqueta" id="edescripcion">Descripción</p>
+			<p class="etiqueta" id="ecantidad">Cant</p>
+			<p class="etiqueta" id="eprecio">Unit</p>
+			<p class="etiqueta" id="ebonif">%</p>
+			<p class="etiqueta" id="eunitario">U Desc</p>
+			<p class="etiqueta" id="eimporte">Importe</p>
+			<p class="etiqueta" id="estock">Stock</p>
+			<p class="etiqueta" id="eub">UB</p>
+			<p class="etiqueta" id="eubalt">UB Alt</p>
+
+			<!--ACÁ VAN LOS INPUT TEXT QUE CREA JAVASCRIPT-->
+
+		</div>
+
+		<div class="caja" id="totales">
+			<p class="etiqueta" id="tsubtotal">Subtotal</p>
+			<p class="etiqueta" id="tiva">IVA</p>
+			<p class="etiqueta" id="tbsas">IIBB BA 1%</p>
+			<p class="etiqueta" id="tcaba">IIBB CF 2%</p>
+			<p class="etiqueta" id="tsfe">IIBB SFe 3%</p>
+			<p class="etiqueta" id="tms">IIBB Ms 4%</p>
+			<p class="etiqueta" id="tt">TOTAL</p>
+
+			<p class="totales" id="subtotal"></p>
+			<p class="totales" id="iva"></p>
+			<p class="totales" id="ba"></p>
+			<p class="totales" id="caba"></p>
+			<p class="totales" id="sfe"></p>
+			<p class="totales" id="ms"></p>
+			<p class="totales" id="total"></p>
+
+
+
+		</div>
+
+
+		<div class="caja" id="pie">	</div>
+
+	</div>
+</body>
+
+</html>
