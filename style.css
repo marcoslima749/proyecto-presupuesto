@@ -68,7 +68,7 @@ body {
 }
 
 #cliente {
-	color: dimgray;
+	font-weight: bold;
 	background: #fff;
 	height: 100%;
 	width: 100%;
@@ -76,6 +76,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	border-radius: 2px;
+	border-style: hidden;
+	text-align: center
 }
 
 #client {
@@ -97,7 +99,7 @@ body {
 }
 
 #presupuesto {
-	background-color: dodgerblue;
+	background-color: #0072DD;
 	grid-column: 3 / 11;
 	grid-row: 2 / 9;
 	display: grid;
@@ -157,7 +159,7 @@ body {
 	text-align: center;
 	resize: none;
 	border-style: solid;
-	background-color: #0072DD;
+	background-color: dodgerblue;
 	font-family: inherit;
 
 

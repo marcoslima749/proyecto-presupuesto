@@ -16,8 +16,9 @@ function comenzar() {
 			//inserta un array para la fila
 			Items.push([]);
 			//cuenta en "r" la cantidad de filas para agregar el dato "fil"
+			//fil es el número de filas y col es el número de columnas
 			let r = (pres1.childElementCount - 11) / 11;
-			//loop para cada elemento de la fila utilizando "i" como iterador para agregar las != f()alidades
+			//loop para cada elemento de la fila utilizando "i" como iterador para agregar las funcionalidades.
 			for (let i = 0; i < 11; i++) {
 
 				let n = document.createElement("input");
@@ -43,6 +44,8 @@ function comenzar() {
 
 
 	}
+/* Estas funciones reemplazaban al placeholder del Número de Cliente,
+para que tuviera estilo pero ya fue.
 
 	function borrar(e) {
 		let elemento = e.target;
@@ -57,8 +60,8 @@ function comenzar() {
 			elemento.style.color = "dimgray";
 		}
 	}
-
-	function tabEnter(e) {
+*/
+	function tabEnter(e) {	//Esta función le otorga al cursor el desplazamiento entre celdas
 		let fil = Number(e.target.dataset.fil);
 		let col = Number(e.target.dataset.col);
 		let els = (document.getElementById("presupuesto").childElementCount - 11) / 11;
@@ -205,8 +208,8 @@ function comenzar() {
 
 	nuevafila();
 	document.getElementById("presupuesto").addEventListener("paste", handlePaste);
-	document.getElementById("cliente").addEventListener("click", borrar);
-	document.getElementById("cliente").addEventListener("focusout", restablecer);
+	//document.getElementById("cliente").addEventListener("click", borrar); // son las llamadas a las f() de placeholder
+	//document.getElementById("cliente").addEventListener("focusout", restablecer); // son las llamadas a las f() de placeholder
 	
 
 
